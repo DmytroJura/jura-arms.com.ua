@@ -4,72 +4,124 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JURA ARMS – БПЛА та рішення для оборони</title>
+  <title>JURA ARMS — БПЛА для оборони</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    * {
       margin: 0;
-      background-color: #f4f4f4;
-      color: #222;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: #0d1117;
+      color: #ffffff;
+      line-height: 1.6;
     }
     header {
-      background: #0c1c3a;
-      color: #fff;
-      padding: 40px 20px;
+      background: linear-gradient(to right, #0d1117, #1f2937);
+      padding: 60px 20px;
       text-align: center;
     }
     header img {
-      height: 150px;
+      height: 120px;
       margin-bottom: 20px;
+      animation: fadeIn 2s ease-in-out;
     }
-    section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
+    h1 {
+      font-size: 3em;
+      color: #00bcd4;
     }
     h2 {
-      color: #0c1c3a;
-      margin-top: 0;
+      margin-bottom: 10px;
+      color: #00e5ff;
+      font-size: 1.8em;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 960px;
+      margin: auto;
+      animation: fadeInUp 1s ease-in-out;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #1e2a38;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      transition: 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      background: #263445;
+    }
+    .card img {
+      max-width: 100%;
+      border-radius: 8px;
+      height: 160px;
+      object-fit: cover;
     }
     .contacts {
-      background-color: #0c1c3a;
-      color: white;
-      padding: 20px;
+      background: #111827;
+      padding: 40px 20px;
       text-align: center;
     }
-    .contacts a {
-      color: #77cfff;
+    .contacts p, .contacts a {
+      font-size: 1.1em;
+      color: #c9d1d9;
+      margin-bottom: 10px;
       text-decoration: none;
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="5.png" alt="JURA ARMS logo" />
+    <img src="5.png" alt="JURA ARMS Логотип" />
     <h1>JURA ARMS</h1>
-    <p>Інноваційні рішення у сфері БПЛА для оборони</p>
+    <p>Інноваційні рішення в сфері БПЛА для оборони України</p>
   </header>
 
   <section>
     <h2>Про нас</h2>
-    <p>JURA ARMS — це українська компанія, що спеціалізується на виробництві, модернізації та реалізації безпілотних літальних апаратів (БПЛА) для військових та спеціальних потреб. Ми поєднуємо новітні технології з практичним досвідом бойового застосування.</p>
+    <p>Ми створюємо безпілотні системи, які реально працюють на полі бою. Наші продукти — це результат досвіду, інженерної думки та бажання змінити хід війни технологіями.</p>
   </section>
 
   <section>
-    <h2>Наші рішення</h2>
-    <ul>
-      <li>БПЛА розвідувального та ударного призначення</li>
-      <li>Модулі наведення, тепловізори, системи скидання</li>
-      <li>Програмне забезпечення для планування польотів</li>
-    </ul>
+    <h2>Наші продукти</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/DJI_Mavic_3.jpg/800px-DJI_Mavic_3.jpg" alt="Mavic 3" />
+        <p>DJI Mavic 3 — аеророзвідка з високою точністю</p>
+      </div>
+      <div class="card">
+        <img src="https://auteldrones.com/cdn/shop/products/EvoMax4T_1.jpg" alt="Evo Max 4T" />
+        <p>Autel Evo Max 4T — з тепловізором та AI-розпізнаванням</p>
+      </div>
+      <div class="card">
+        <img src="https://cdn.pixabay.com/photo/2020/02/24/19/58/drone-4878005_1280.jpg" alt="Custom Drone" />
+        <p>Тактичні кастомні дрони під конкретні задачі</p>
+      </div>
+    </div>
   </section>
 
   <div class="contacts">
     <h2>Контакти</h2>
     <p>Телефон: +38 (067) 123-45-67</p>
     <p>Email: info@jura-arms.com</p>
-    <p>Telegram: <a href="https://t.me/JURA_ARMS">@JURA_ARMS</a></p>
+    <p><a href="https://t.me/JURA_ARMS" target="_blank">Telegram: @JURA_ARMS</a></p>
   </div>
 
 </body>
